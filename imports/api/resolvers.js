@@ -24,6 +24,7 @@ const resolvers = {
     getFortuneCookie() {
       return FortuneCookie.getOne()
     },
+  },
   Mutation: {
     addTask(_, args) {
       let id = Tasks.insert({ text: args.text, createdAt: new Date() })
